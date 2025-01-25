@@ -14,9 +14,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs'); 
 
 // Define the home route
-app.get("/", function (req, res) {
-    res.render("index"); // Automatically looks for "views/index.ejs"
-});
+// app.get("/", function (req, res) {
+//     res.render("index"); // Automatically looks for "views/index.ejs"
+// });
 
 
 app.get("/profile/:username", function(req,res){
